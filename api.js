@@ -1,7 +1,8 @@
 const axios = require('axios');
 
 // URL de la API
-const apiUrl = 'https://apiinterna.interbook.com.ar/api/';
+const host = "https://tuhost.com.ar"
+const apiUrl = `${host}/api/`;
 const apiUrlTest = 'http://localhost:996/api/';
 
 
