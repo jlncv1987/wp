@@ -19,5 +19,11 @@ node index
 # STOP APP
 CTRL + C
 
+# Bug puppeteer
+https://stackoverflow.com/questions/76974079/whatsapp-web-js-doesnt-fire-ready-event
+
+# repo libreria wp
+https://github.com/Julzk/whatsapp-web.js/
+
 
 

@@ -15,14 +15,14 @@ const init = async () => {
         var isGroup = chat.isGroup;
         var estados = from.split("@")[1].includes("broadcast");
         if (body && !isGroup && !estados) {
-            service.bot(from, body, 5, from.split("@")).then(async res => {
-                await service.confirmSent(JSON.stringify(message));               
+            service.bot(from, JSON.stringify(body), 5, from.split("@")[0]).then(async res => {
+                await service.confirmSentMessageWp(JSON.stringify(message));               
                 let {resultado} = res; 
                 if (resultado.length > 0) {       
                     let {Respuesta } = resultado[0]; 
                     if (Respuesta.includes("{")) {
                         let obj = JSON.parse(Respuesta)
-                        let list = new List(obj.bodyList, obj.buttonText, obj.sections, obj.titleList);
+                        let list = new wp.List(obj.bodyList, obj.buttonText, obj.sections, obj.titleList);
                         client.sendMessage(from, list);
                         return;
                     }
@@ -32,7 +32,7 @@ const init = async () => {
         }
 
         if (body && isGroup && !estados) 
-            await service.addGroup(JSON.stringify(message), from, body, from.split("@"));
+            await service.addGroup(JSON.stringify(message), from, body, from.split("@")[0]);
 
     });
     client.on('message_ack', async (msg, ack) => {
@@ -47,8 +47,9 @@ const init = async () => {
             ACK_READ: 3
             ACK_PLAYED: 4
         */
-        //dbSync.confirmSent(JSON.stringify(msg));
+        //dbSync.confirmSentMessageWp(JSON.stringify(msg));
         await service.confirmSentMessageWp(JSON.stringify(msg));
+        console.log(`id: ${unique}, ack: ${ack}, to: ${to}`)
     });
     client.on('ready', async () => {
         console.log('Client is ready!');
@@ -61,6 +62,12 @@ const init = async () => {
                     console.log(`Intentando procesar indice ${i}`);
                     try {
                         let phone = _data[i].isGroup ? `${_data[i].phoneWhatsapp}@g.us` : `${_data[i].phoneWhatsapp}@c.us`
+                        if (_data[i].bodyWhatsapp.includes("{")) {
+                            let obj = JSON.parse(_data[i].bodyWhatsapp)
+                            let list = new wp.List(obj.bodyList, obj.buttonText, obj.sections, obj.titleList);
+                            client.sendMessage(phone, list);
+                            return;
+                        }
                         let result = await client.sendMessage(phone, `${_data[i].titleWhatsapp ? _data[i].titleWhatsapp : ""}\n${_data[i].bodyWhatsapp ? _data[i].bodyWhatsapp : ""}`);
                         console.log(`WhatsApp message sent to ${_data[i].phoneWhatsapp}`);
                         result.idWhatsapp = _data[i].idWhatsapp;

@@ -1,7 +1,7 @@
 const axios = require('axios');
 
 // URL de la API
-const host = "https://tuhost.com.ar"
+const host = "https://apiinterna.interbook.com.ar"
 const apiUrl = `${host}/api/`;
 const apiUrlTest = 'http://localhost:996/api/';
 
@@ -14,8 +14,7 @@ async function post(endpoint, parametros) {
             return respuesta.data;
         })
         .catch(function (error) {
-            console.error(`Error en la solicitud : ${endpoint} -> ${error} 
-${JSON.stringify(parametros)}`);
+            console.error(`Error en la solicitud : ${endpoint} -> ${error}, ${parametros}`);
             return {Error :error, resultado:[]};
         });
 }

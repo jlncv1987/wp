@@ -1,0 +1,28 @@
+2023/09/14-13:45:56.513 87b0 Reusing MANIFEST C:\Users\josen\Desktop\Proyectos\wp\.wwebjs_auth\session-interbook\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
+2023/09/14-13:45:56.514 87b0 Recovering log #348
+2023/09/14-13:45:56.666 87b0 Reusing old log C:\Users\josen\Desktop\Proyectos\wp\.wwebjs_auth\session-interbook\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/000348.log 
+2023/09/14-13:46:15.776 70c Level-0 table #361: started
+2023/09/14-13:46:15.834 70c Level-0 table #361: 1249953 bytes OK
+2023/09/14-13:46:15.837 70c Delete type=0 #348
+2023/09/14-13:46:15.877 7cf8 Compacting 1@1 + 9@2 files
+2023/09/14-13:46:15.997 7cf8 Generated table #362@1: 43921 keys, 2217764 bytes
+2023/09/14-13:46:16.032 7cf8 Generated table #363@1: 1198 keys, 2145549 bytes
+2023/09/14-13:46:16.072 7cf8 Generated table #364@1: 2810 keys, 2143353 bytes
+2023/09/14-13:46:16.155 7cf8 Generated table #365@1: 27566 keys, 2230145 bytes
+2023/09/14-13:46:16.199 7cf8 Generated table #366@1: 4389 keys, 2124379 bytes
+2023/09/14-13:46:16.311 7cf8 Generated table #367@1: 91086 keys, 2238587 bytes
+2023/09/14-13:46:16.440 7cf8 Generated table #368@1: 111378 keys, 2264824 bytes
+2023/09/14-13:46:16.568 7cf8 Generated table #369@1: 110952 keys, 2262297 bytes
+2023/09/14-13:46:16.674 7cf8 Generated table #370@1: 94555 keys, 1921153 bytes
+2023/09/14-13:46:16.674 7cf8 Compacted 1@1 + 9@2 files => 19548051 bytes
+2023/09/14-13:46:16.677 7cf8 compacted to: files[ 0 0 9 0 0 0 0 ]
+2023/09/14-13:46:16.677 7cf8 Delete type=2 #350
+2023/09/14-13:46:16.677 7cf8 Delete type=2 #351
+2023/09/14-13:46:16.677 7cf8 Delete type=2 #352
+2023/09/14-13:46:16.677 7cf8 Delete type=2 #353
+2023/09/14-13:46:16.677 7cf8 Delete type=2 #354
+2023/09/14-13:46:16.677 7cf8 Delete type=2 #355
+2023/09/14-13:46:16.677 7cf8 Delete type=2 #356
+2023/09/14-13:46:16.677 7cf8 Delete type=2 #357
+2023/09/14-13:46:16.677 7cf8 Delete type=2 #358
+2023/09/14-13:46:16.677 7cf8 Delete type=2 #361

@@ -1,0 +1,28 @@
+2023/09/14-13:26:02.095 838 Reusing MANIFEST C:\Users\josen\Desktop\Proyectos\wp\.wwebjs_auth\session-interbook\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
+2023/09/14-13:26:02.096 838 Recovering log #336
+2023/09/14-13:26:02.263 838 Reusing old log C:\Users\josen\Desktop\Proyectos\wp\.wwebjs_auth\session-interbook\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/000336.log 
+2023/09/14-13:26:21.739 3360 Level-0 table #349: started
+2023/09/14-13:26:21.778 3360 Level-0 table #349: 1230540 bytes OK
+2023/09/14-13:26:21.781 3360 Delete type=0 #336
+2023/09/14-13:26:21.808 4964 Compacting 1@1 + 9@2 files
+2023/09/14-13:26:21.930 4964 Generated table #350@1: 41593 keys, 2210555 bytes
+2023/09/14-13:26:21.970 4964 Generated table #351@1: 1128 keys, 2158427 bytes
+2023/09/14-13:26:22.015 4964 Generated table #352@1: 2957 keys, 2144087 bytes
+2023/09/14-13:26:22.136 4964 Generated table #353@1: 27711 keys, 2230206 bytes
+2023/09/14-13:26:22.182 4964 Generated table #354@1: 4021 keys, 2124574 bytes
+2023/09/14-13:26:22.305 4964 Generated table #355@1: 96782 keys, 2245638 bytes
+2023/09/14-13:26:22.450 4964 Generated table #356@1: 111340 keys, 2263902 bytes
+2023/09/14-13:26:22.586 4964 Generated table #357@1: 110887 keys, 2261887 bytes
+2023/09/14-13:26:22.688 4964 Generated table #358@1: 87224 keys, 1769116 bytes
+2023/09/14-13:26:22.688 4964 Compacted 1@1 + 9@2 files => 19408392 bytes
+2023/09/14-13:26:22.690 4964 compacted to: files[ 0 0 9 0 0 0 0 ]
+2023/09/14-13:26:22.690 4964 Delete type=2 #338
+2023/09/14-13:26:22.690 4964 Delete type=2 #339
+2023/09/14-13:26:22.690 4964 Delete type=2 #340
+2023/09/14-13:26:22.691 4964 Delete type=2 #341
+2023/09/14-13:26:22.691 4964 Delete type=2 #342
+2023/09/14-13:26:22.691 4964 Delete type=2 #343
+2023/09/14-13:26:22.691 4964 Delete type=2 #344
+2023/09/14-13:26:22.691 4964 Delete type=2 #345
+2023/09/14-13:26:22.691 4964 Delete type=2 #346
+2023/09/14-13:26:22.691 4964 Delete type=2 #349
